@@ -1,0 +1,75 @@
+@charset 'UTF-8';
+/* 
+Theme Name: WCB Funiture1
+Description: WordPress オリジナルテーマ制作用デモ
+Version: 1.0
+Author: cookie
+Author URI: https://kouki-l-m-o.com
+*/
+
+.site-title {
+  text-align: center;
+}
+
+.btn-menu {
+  display: none;
+}
+
+.post-list {
+  width: 80%;
+  margin: auto;
+}
+
+
+.menu-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.post-header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 180px 180px 100px 100px;
+  gap: 50px;
+}
+.post-categories {
+  align-items: flex-start;
+}
+
+.grid-container {
+  border: 0.5px solid #ebebeb;
+  height: 200px;
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column-reverse;
+}
+.badge {
+  background-color: #3d24dd;
+  color: white;
+  padding: 3px;
+  display: flex;
+  margin-bottom: 120px;
+}
+
+.nav-links {
+  text-align: center;
+}
+
+.nav-links a {
+  background-color: rgb(71, 219, 71);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 11px;
+}
