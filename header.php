@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WCB Furniture</title>
   <link 
     rel="icon" 
     href="<?php echo esc_url(get_theme_file_url('/images/leaf-left.svg')); ?>
@@ -17,12 +16,13 @@
   <header class="site-header">
     <div class="wrapper">
       <h1 class="site-title">
-        <a 
+        <a
           href="<?php echo esc_url(get_theme_file_uri('/images/logo.svg')); ?>"
           alt="<?php bloginfo('name'); ?>"
         >
         </a>
       </h1>
+      <p class="site-description"><?php bloginfo('description'); ?></p>
     </div>
   </header>
   <nav class="primary-navigation wrapper">
