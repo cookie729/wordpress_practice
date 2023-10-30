@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link
     rel="icon"
-    href="<?php echo esc_url(get_theme_file_url('/images/leaf-left.svg')); ?>"
+    href="<?php echo esc_url(get_theme_file_uri('/images/leaf-left.svg')); ?>"
     type="image/svg+xml"
   >
   <?php wp_head(); ?>
