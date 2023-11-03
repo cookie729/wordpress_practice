@@ -18,8 +18,8 @@
     <div class="wrapper">
       <h1 class="site-title">
         <a href="<?php echo esc_url(home_url('/')); ?>">
-          <img 
-            class="site-logo" 
+          <img
+            class="site-logo"
             src="<?php echo esc_url(get_theme_file_uri('/images/logo.svg')); ?>"
             alt="<?php bloginfo('name'); ?>">
         </a>
