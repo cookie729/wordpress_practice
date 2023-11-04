@@ -13,10 +13,9 @@
 </head>
 <body class="home">
   <footer class="site-footer">
-    <p class="copyright">&copy; 2022 WCB Furniture</p>
+    <p class="copyright">&copy; 2022 <?php bloginfo('name'); ?></p>
   </footer>
 
-  <!-- script -->
-  <script src="js/script.js"></script>
+<?php wp_footer(); ?>
 </body>
 </html>
