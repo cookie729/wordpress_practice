@@ -8,7 +8,12 @@ function add_files() {
 add_action('wp_enqueue_scripts', 'add_files');
 
 function theme_setup() {
+  // title タグ
   add_theme_support('title-tag');
+  
+  // アイキャッチ画像
+  add_theme_support('post-thumbnails');
+  
   // メニュー
   register_nav_menus(
     array(

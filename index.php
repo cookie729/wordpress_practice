@@ -1,132 +1,28 @@
 <?php get_header(); ?>
     <main class="main-contents wrapper">
         <div class="post-list">
+        <?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <article class="post-item">
-                <a href="#">
-                    <img src="images/img-fruits.jpg" alt="" class="wp-post-image">
+                <a href="<?php echo esc_url(get_permalink()); ?>">
+                <?php if(has_post_thumbnail()): ?>
+                  <?php the_post_thumbnail('medium'); ?>
+                <?php else: ?>
+                  <img src="<?php echo esc_url(get_theme_file_uri('/images/ph.png')); ?>" alt="" class="wp-post-image">
+                <?php endif; ?>
                 </a>
                 <header class="post-header">
                     <h2 class="post-title">
-                        <a href="#">初心者必携のキャンプグッズ おすすめ10選</a>
+                        <a href="<?php echo esc_url(get_permalink()); ?>"><?php the_title(); ?></a>
                     </h2>
-                    <time class="post-date" datetime="2022-12-31">2022年12月31日</time>
-                    <ul class="post-categories">
-                        <li><a href="#">オーガニックフード</a></li>
-                    </ul>
+                    <time class="post-date" datetime="<?php echo get_the_date('m-Y-d'); ?>">
+                      <?php the_date(); ?>
+                    </time>
+                    <?php the_category(); ?>
                 </header>
             </article>
-            <article class="post-item">
-                <a href="#">
-                    <img src="images/img-leaf.jpg" alt="" class="wp-post-image">
-                </a>
-                <header class="post-header">
-                    <h2 class="post-title">
-                        <a href="#">初心者必携のキャンプグッズ おすすめ10選</a>
-                    </h2>
-                    <time class="post-date" datetime="2022-12-31">2022年12月31日</time>
-                    <ul class="post-categories">
-                        <li><a href="#">インテリア</a></li>
-                    </ul>
-                </header>
-            </article>
-            <article class="post-item">
-                <a href="#">
-                    <img src="images/img-tent.jpg" alt="" class="wp-post-image">
-                </a>
-                <header class="post-header">
-                    <h2 class="post-title">
-                        <a href="#">初心者必携のキャンプグッズ おすすめ10選</a>
-                    </h2>
-                    <time class="post-date" datetime="2022-12-31">2022年12月31日</time>
-                    <ul class="post-categories">
-                        <li><a href="#">アウトドアグッズ</a></li>
-                    </ul>
-                </header>
-            </article>
-            <article class="post-item">
-                <a href="#">
-                    <img src="images/img-plant.jpg" alt="" class="wp-post-image">
-                </a>
-                <header class="post-header">
-                    <h2 class="post-title">
-                        <a href="#">初心者必携のキャンプグッズ おすすめ10選</a>
-                    </h2>
-                    <time class="post-date" datetime="2022-12-31">2022年12月31日</time>
-                    <ul class="post-categories">
-                        <li><a href="#">インテリア</a></li>
-                    </ul>
-                </header>
-            </article>
-            <article class="post-item">
-                <a href="#">
-                    <img src="images/img-drink.jpg" alt="" class="wp-post-image">
-                </a>
-                <header class="post-header">
-                    <h2 class="post-title">
-                        <a href="#">初心者必携のキャンプグッズ おすすめ10選</a>
-                    </h2>
-                    <time class="post-date" datetime="2022-12-31">2022年12月31日</time>
-                    <ul class="post-categories">
-                        <li><a href="#">オーガニックフード</a></li>
-                    </ul>
-                </header>
-            </article>
-            <article class="post-item">
-                <a href="#">
-                    <img src="images/img-yoga.jpg" alt="" class="wp-post-image">
-                </a>
-                <header class="post-header">
-                    <h2 class="post-title">
-                        <a href="#">初心者必携のキャンプグッズ おすすめ10選</a>
-                    </h2>
-                    <time class="post-date" datetime="2022-12-31">2022年12月31日</time>
-                    <ul class="post-categories">
-                        <li><a href="#">ヒーリング</a></li>
-                    </ul>
-                </header>
-            </article>
-            <article class="post-item">
-                <a href="#">
-                    <img src="images/img-music.jpg" alt="" class="wp-post-image">
-                </a>
-                <header class="post-header">
-                    <h2 class="post-title">
-                        <a href="#">初心者必携のキャンプグッズ おすすめ10選</a>
-                    </h2>
-                    <time class="post-date" datetime="2022-12-31">2022年12月31日</time>
-                    <ul class="post-categories">
-                        <li><a href="#">ヒーリング</a></li>
-                    </ul>
-                </header>
-            </article>
-            <article class="post-item">
-                <a href="#">
-                    <img src="images/img-room.jpg" alt="" class="wp-post-image">
-                </a>
-                <header class="post-header">
-                    <h2 class="post-title">
-                        <a href="#">初心者必携のキャンプグッズ おすすめ10選</a>
-                    </h2>
-                    <time class="post-date" datetime="2022-12-31">2022年12月31日</time>
-                    <ul class="post-categories">
-                        <li><a href="#">インテリア</a></li>
-                    </ul>
-                </header>
-            </article>
-            <article class="post-item">
-                <a href="#">
-                    <img src="images/img-tomato.jpg" alt="" class="wp-post-image">
-                </a>
-                <header class="post-header">
-                    <h2 class="post-title">
-                        <a href="#">初心者必携のキャンプグッズ おすすめ10選</a>
-                    </h2>
-                    <time class="post-date" datetime="2022-12-31">2022年12月31日</time>
-                    <ul class="post-categories">
-                        <li><a href="#">オーガニックフード</a></li>
-                    </ul>
-                </header>
-            </article>
+            <?php endwhile; else : ?>
+              <p>記事はありません。</p>
+            <?php endif; ?>
         </div>
 
         <div class="nav-links">

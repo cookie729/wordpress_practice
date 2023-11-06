@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WCB Furniture</title>
+  <title>WCB Natural LIfe</title>
   <link rel="icon" href="images/leaf-left.svg" type="image/svg+xml">
   <!-- CSS -->
   <link rel="stylesheet" href="https://unpkg.com/destyle.css@2.0.2/destyle.css">
